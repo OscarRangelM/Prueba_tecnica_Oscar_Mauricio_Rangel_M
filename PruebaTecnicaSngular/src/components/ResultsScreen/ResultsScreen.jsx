@@ -1,9 +1,13 @@
 import styles from './ResultsScreen.module.css';
 
-export default function ResultsScreen() {
+export default function ResultsScreen(props) {
+    const resultado = props;
+    console.log(resultado.resultado)
     return (
         <div className={styles.divResults}>
-            <h1>Aqui el resultado</h1>
+            <div >
+                <p>aqui va el resultado. {`${resultado.resultado}`}</p>
+            </div>
         </div>
     );
 }

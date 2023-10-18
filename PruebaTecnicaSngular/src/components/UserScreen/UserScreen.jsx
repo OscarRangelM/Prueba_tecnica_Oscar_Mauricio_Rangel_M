@@ -1,11 +1,13 @@
 import styles from './UserScreen.module.css';
 import { useState } from 'react';
+import ResultsScreen from '../ResultsScreen/ResultsScreen.jsx';
 
 import { NSerie } from '../FunctionComponents/FunctionCoponents';
 
 export default function UserScreen() {
 
     const [numSerie, setNumSerie] = useState(0)
+    const [resultadoN, setResultadoN] = useState(0)
 
     function handleChange(e){
         setNumSerie(parseInt(e.target.value))
@@ -14,6 +16,7 @@ export default function UserScreen() {
     function handleSubmit(e) {
         e.preventDefault();
         const resSub = NSerie.serieResultados(numSerie);
+        setResultadoN(resSub)
         console.log(resSub);
     }
 
@@ -29,6 +32,7 @@ export default function UserScreen() {
                 <input type="submit" className={styles.bttnSubmit} value="Submit" />
                 </div>
             </form>
+            <ResultsScreen resultado={`${resultadoN}`} />
         </div>
     );
 }

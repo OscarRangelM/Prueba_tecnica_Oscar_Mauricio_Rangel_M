@@ -1,4 +1,4 @@
-class NSerie {
+export class NSerie {
     static nTriangular(n) {
         return n * (n + 1) / 2
     }
@@ -47,5 +47,3 @@ class NSerie {
     }
 
 }
-
-console.log(NSerie.serieResultados(10))

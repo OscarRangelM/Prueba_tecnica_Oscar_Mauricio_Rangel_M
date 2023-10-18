@@ -1,9 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
 body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
 }
 
 h1 {
@@ -12,7 +26,11 @@ h1 {
 }
 
 .App{
-  border: 1px solid red;
-  width: 50vw;
-  height: 50vh;
+  width: 40rem;
+  border: 1px solid #eee;
+  padding: 1rem;
+  background-color: #005490;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
 }

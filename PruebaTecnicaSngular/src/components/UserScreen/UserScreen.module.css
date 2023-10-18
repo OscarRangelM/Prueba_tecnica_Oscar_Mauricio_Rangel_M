@@ -1,0 +1,28 @@
+.bttnSubmit{
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: green;
+}
+
+.inputNumero{
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.formSection, .divUser{
+    width: 100%;
+}

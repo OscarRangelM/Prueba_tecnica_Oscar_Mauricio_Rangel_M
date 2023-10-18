@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  background-color: rgb(93, 92, 92);
   margin: 0;
   display: flex;
   place-items: center;
@@ -26,7 +27,11 @@ h1 {
 }
 
 .App{
-  width: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35vw;
+  height: 30vh;
   border: 1px solid #eee;
   padding: 1rem;
   background-color: #005490;

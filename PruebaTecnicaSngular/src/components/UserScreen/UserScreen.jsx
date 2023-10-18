@@ -7,7 +7,7 @@ import { NSerie } from '../FunctionComponents/FunctionCoponents';
 export default function UserScreen() {
 
     const [numSerie, setNumSerie] = useState(1)
-    const [resultadoN, setResultadoN] = useState(0)
+    const [resultadoN, setResultadoN] = useState(3)
 
     function handleChange(e){
         setNumSerie(parseInt(e.target.value))
@@ -23,13 +23,12 @@ export default function UserScreen() {
 
     return (
         <div className={styles.divUser}>
-            <p>Selecciona el valor de n</p>
+            <h2>Selecciona el valor de n</h2>
             <form className={styles.formSection} onSubmit={handleSubmit} >
                 <input type='number' className={styles.inputNumero} name="numero" min={1} max={100} onChange={handleChange} value={numSerie}></input>
                 <hr />
                 <div>
-                <button>reset</button>
-                <input type="submit" className={styles.bttnSubmit} value="Submit" />
+                <input type="submit" className={styles.bttnSubmit} value="Calcular" />
                 </div>
             </form>
             <ResultsScreen resultado={`${resultadoN}`} />

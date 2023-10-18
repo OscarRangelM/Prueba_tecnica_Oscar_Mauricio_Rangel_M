@@ -6,7 +6,7 @@ export default function ResultsScreen(props) {
     return (
         <div className={styles.divResults}>
             <div >
-                <p>aqui va el resultado. {`${resultado.resultado}`}</p>
+                <p className={styles.pResultado}>Serie(n) = 2triangular(n+1) - 2primo(n) +fibonacci(n+1) = {`${resultado.resultado}`}</p>
             </div>
         </div>
     );
